@@ -23,7 +23,7 @@ def find_mean(data_lst):
 def find_median(data_lst):
 
     '''Write a function that takes a list of numbers as input and returns
-    the median of that input list.
+    the median of that input list. Account for both even and odd length lists.
 
     In: List of integers
     Out: The median as an integer or float
@@ -77,7 +77,7 @@ def find_variance(data_lst, population=True):
     '''Write a function that takes a list of numbers as input and returns
     the variance of that input list. Notice the population=True argument:
     write your code so that it calculates population variance if that argument
-    is True, and sample variance if it is false.
+    is True, and sample variance if it is False.
 
     In: List of integers
     Out: The variance as an integer or float
@@ -178,7 +178,7 @@ def poisson_pmf(rate, k):
 
     In: The rate, k: number of successes; both ints or floats
     Out: PMF, E(X), Var(X); all ints or floats
-    
+
     Ex: poisson_pmf(5, 0)
     >>>0.006737946999085469, 5, 5'''
 
